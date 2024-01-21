@@ -20,7 +20,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v3
       - name: test if release exists
-        uses: ./
+        uses: oskarirauta/release-exists-action@v2
         with:
           token: ${{ github.token }}
           release: ${{ inputs.releasename }}
